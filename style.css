@@ -25,8 +25,8 @@ body
 .header > span
 {
     font-size: 32px;
-    color: #4CAF50;
-    opacity: 0.45;
+    color: #acdbce;
+    opacity: 0.3;
 }
 
 .logo
@@ -36,10 +36,10 @@ body
 	font-size: 56px;
 	margin-left: auto;
 	margin-right: auto;
-	color: forestgreen;
+	color: #2b6944;
 	font-weight: 700;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    opacity: 0.7;
+    opacity: 0.8;
 	/*2px 2px 0 black,
 	-2px 2px 0 black,
 	-2px -2px 0 black,
@@ -209,11 +209,11 @@ ol > li:hover > ul
 
             /*--------------------------weather-widget-----------------------------*/
 .weatherApp {
-    margin: 20px auto 30px auto;
+    margin: 15px auto 20px auto;
     width: 300px;
     max-width: 90%;
     height: 180px;
-    border: 1px solid black;
+    border: 1px double black;
     border-radius: 20px;
     box-shadow: 10px 10px 50px #888888;
     overflow: hidden;
@@ -224,11 +224,13 @@ ol > li:hover > ul
 
 .left {
     float: left;
-    background: #262626;
+    background-image: url(img/black_paper.png);
     padding:10px;
     width:50%;
     height:100%;
     color:white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .temperature {
@@ -255,25 +257,29 @@ ol > li:hover > ul
     height: 60%;
     width: 100%;
     margin: auto;
-    background: #cec;
+    background-image: url(img/dust.png);
+    border-top-right-radius: 20px;
+
 }
 
 .top img {
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .bottom {
     height: 40%;
-    background: #669999;
+    background-image: url(img/pool_table.png);
     color: white;
     font-weight: bold;
+    border-bottom-right-radius: 20px;
 }
 
 .humidity {
     padding: 2px;
 }
 
-.wind {
+#wApp1, #wApp2, #wApp3, #wApp4, #wApp5 {
+    display: none;
 }
 
             /*--------------------------weather-widget>-----------------------------*/
@@ -291,25 +297,37 @@ input[type=text], select {
 input[type=submit] {
     display: block;
     width: 85%;
-    background-color: #4CAF50;
+    background-color: #357a51;
     color: white;
     padding: 14px 20px;
     margin: 5px auto;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #2b6944;
+    box-shadow: 8px 8px 15px #e1e1e1;
+    text-shadow: 0.5px 0.5px 0.5px #e8e8e8;
 }
 
 .content > div {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f2f2f2;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid black;
+    box-shadow: 5px 5px 25px #888888;
+    text-align: center;
+}
+.content > div > div {
+    background-color: #f2f2f2;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 4px double #888888;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #888888;
 }
 
 label{
